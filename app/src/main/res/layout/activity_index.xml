@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bag3"
+    tools:context="com.arcsoft.example.checkin.IndexActivity">
+
+    <!--  <com.arcsoft.example.checkin.testapplication.CameraSurfaceView
+          android:id="@+id/cameraSurfaceView"
+          android:layout_width="match_parent"
+          android:layout_height="263dp"
+          android:layout_marginTop="90dp"/>
+
+      <com.arcsoft.example.checkin.testapplication.CameraTopRectView
+          android:id="@+id/rectOnCamera"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <ImageView
+            android:id="@+id/cameraImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/pro"
+            android:gravity="center_horizontal"
+            android:maxWidth="988px"
+            android:maxHeight="988px" />
+    </RelativeLayout>
+    <!-- <Button
+         android:id="@+id/takePic"
+         android:layout_width="80dp"
+         android:layout_height="50dp"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentBottom="true"
+         android:layout_marginStart="178dp"
+         android:layout_marginLeft="108dp"
+         android:layout_marginBottom="405dp"
+         android:background="#88427ac7"
+         android:text="拍照"
+         android:layout_marginTop="300dp"
+         android:textColor="#aaa" />-->
+
+
+    <!--<ImageView
+        android:id="@+id/img1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/ic_launcher_foreground" />
+-->
+
+    <!-- 上边 -->
+
+
+    <TextView
+        android:id="@+id/head1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cameraImage"
+        android:layout_marginBottom="-70dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center_horizontal"
+        android:text="@string/head"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+
+    <!--横向布局-->
+    <!--  <TextView
+         android:id="@+id/userid"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="120dp"
+         android:layout_marginLeft="19dp"
+         android:textSize="24dp"
+         android:layout_toRightOf="@id/cameraSurfaceView"
+         android:src="@drawable/ic_launcher_foreground"
+         android:text="@string/id"
+         />
+     <View
+          android:layout_marginTop="157dp"
+          android:layout_height="1dp"
+          android:layout_width="290dp"
+          android:layout_marginLeft="220dp"
+          android:background="#aa000000" />-->
+
+
+    <!--显示id-->
+    <!--<EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="90dp"
+        android:textSize="24dp"
+        android:layout_toRightOf="@id/cameraSurfaceView"
+        android:hint="请输入工号"
+        android:inputType="textEmailAddress"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@id/cameraSurfaceView"
+        android:src="@drawable/ic_launcher_foreground"
+        android:text="@string/usersex"/>
+
+
+    <EditText
+        android:id="@+id/usersex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="90dp"
+        android:textSize="24dp"
+        android:layout_toRightOf="@id/cameraSurfaceView"
+        android:hint="请输入姓名"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:maxLength="4"
+        />
+
+
+    <TextView
+        android:id="@+id/usersex"
+        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@id/cameraSurfaceView"
+        android:src="@drawable/ic_launcher_foreground"
+        android:text="@string/sex"/>
+
+    <RadioGroup
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="90dp"
+        android:layout_toRightOf="@id/cameraSurfaceView"
+
+        >
+        <RadioButton
+            android:id="@+id/nan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="男"/>
+        <RadioButton
+            android:id ="@+id/nv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="女"/>
+    </RadioGroup>
+    -->
+
+    <!--<TextView
+        android:id="@+id/usertime"
+        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@id/img1"
+        android:src="@drawable/ic_launcher_foreground"
+        android:text="@string/time"/>
+    <View
+        android:layout_marginTop="276dp"
+        android:layout_height="1dp"
+        android:layout_width="290dp"
+        android:layout_marginLeft="220dp"
+        android:background="#aa000000" />-->
+    <!--时间-->
+    <!--<TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@id/cameraSurfaceView"
+        android:text="当前系统时间:"
+        android:textSize="24dp"
+        android:layout_marginTop="360dp"
+        />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="380dp"
+        android:layout_marginLeft="382dp"
+        android:layout_marginTop="270dp"
+        android:layout_toRightOf="@id/cameraSurfaceView"
+        android:text="保存" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="302dp"
+        android:layout_marginTop="270dp"
+        android:layout_toRightOf="@id/cameraSurfaceView"
+        android:text="重置" />-->
+    <!--时间显示-->
+    <!--<TextView
+        android:id="@+id/timeContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_toRightOf="@id/img1"
+        android:text="当前系统时间"
+        android:textSize="24dp"
+        android:layout_marginTop="290dp"
+        />-->
+
+
+    <!--垂直布局-->
+
+    <TextView
+        android:id="@+id/userid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="640dp"
+        android:text="@string/id"
+        android:textSize="60dp" />
+    <!--显示id-->
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="113dp"
+        android:layout_marginLeft="470dp"
+        android:layout_marginTop="630dp"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="请输入工号"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textSize="60dp"
+        android:theme="@style/MyEditText"
+
+
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="780dp"
+        android:text="@string/name"
+        android:textSize="60dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="470dp"
+        android:layout_marginTop="770dp"
+        android:hint="请输入姓名"
+        android:inputType="textPersonName"
+        android:maxLength="4"
+        android:singleLine="true"
+        android:textSize="60dp"
+        android:theme="@style/MyEditText" />
+
+
+    <TextView
+        android:id="@+id/usersex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="930dp"
+        android:text="@string/sex"
+        android:textSize="60dp" />
+
+    <RadioGroup
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="470dp"
+        android:layout_marginTop="930dp"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/nan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="男"
+            android:textColor="#999999"
+            android:textSize="60dp" />
+        <RadioButton
+            android:id="@+id/nv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="女"
+            android:textColor="#999999"
+            android:textSize="60dp" />
+    </RadioGroup>
+
+    <!--时间-->
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="1690dp"
+        android:text=""
+        android:textSize="40dp" />
+
+    <!--部门-->
+    <TextView
+        android:id="@+id/userdepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="1070dp"
+        android:text="@string/deparment"
+        android:textSize="60dp" />
+
+    <!-- android:entries="@array/department"-->
+    <Spinner
+        android:id="@+id/department"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="470dp"
+        android:layout_marginTop="1080dp" />
+    <!--下划线-->
+ <TextView
+     android:layout_width="300dp"
+     android:layout_height="2dp"
+    android:layout_marginTop="1150dp"
+    android:layout_marginLeft="470dp"
+    android:background="@color/color_bg_notification"
+     />
+    <Button
+        android:id="@+id/save"
+        style="@style/roundbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="640dp"
+        android:layout_marginLeft="1022dp"
+        android:layout_marginTop="1300dp"
+        android:background="@drawable/top_button_shap"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="60dp" />
+
+    <Button
+        android:id="@+id/reset"
+        style="@style/roundbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="902dp"
+        android:layout_marginTop="1300dp"
+        android:background="@drawable/top_button_shap"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="重置"
+        android:textColor="@color/white"
+        android:textSize="60dp" />
+
+    <ImageButton
+        android:id="@+id/camera"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="490dp"
+        android:layout_marginLeft="1002dp"
+        android:layout_marginTop="430dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/camera" />
+    <!--<Button
+      android:id="@+id/camera"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:layout_marginStart="180dp"
+      android:layout_marginLeft="802dp"
+      android:layout_marginTop="300dp"
+      android:text="去拍照"
+        android:layout_below="@id/a"
+  />-->
+
+
+</FrameLayout>

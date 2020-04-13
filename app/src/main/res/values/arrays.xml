@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="department">
+        <!---->
+        <item>请选择部门</item>
+        <item>技术部</item>
+        <item>售后部</item>
+        <item>销售部</item>
+        <item>财务部</item>
+        <item>后勤部</item>
+    </string-array>
+</resources>

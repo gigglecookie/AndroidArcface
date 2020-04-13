@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.arcsoft.example.checkin.testapplication.Registered">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1300dp">
+        <TextureView
+            android:id="@+id/single_camera_texture_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.arcsoft.arcfacedemo.widget.FaceRectView
+            android:id="@+id/single_camera_face_rect_view"
+            android:layout_width="match_parent"
+            android:layout_height="1300dp" />
+
+
+
+    </FrameLayout>
+
+    <!--活体检测-->
+    <!--<Switch
+        android:id="@+id/single_camera_switch_liveness_detect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="20dp"
+        android:text="@string/liveness_detect" />-->
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom|end"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--注册按钮-->
+        <Button
+            android:id="@+id/registed"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:onClick="register"
+            android:layout_marginRight="340dp"
+            android:layout_marginBottom="300dp"
+            android:textColor="@color/white"
+            android:background="@drawable/top_button_shap"
+            style="@style/roundbutton"
+            android:text="拍照" />
+        <!--人脸注册-->
+       <!-- <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="switchCamera"
+            android:text="@string/switch_camera" />-->
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/single_camera_recycler_view_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

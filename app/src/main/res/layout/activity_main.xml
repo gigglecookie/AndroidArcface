@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bag2"
+    android:fitsSystemWindows="true"
+    tools:context="com.arcsoft.example.checkin.MainActivity">
+    <!--<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="490dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="打卡系统"
+        android:textSize="38dp" />-->
+<!--大为科技-->
+    <ImageView
+        android:layout_width="271dp"
+        android:layout_height="97dp"
+        android:background="@drawable/logo" />
+
+    <!--为国聚财-->
+
+    <!-- <ImageView
+         android:layout_width="271dp"
+         android:layout_height="97dp"
+         android:background="@drawable/logo" />-->
+    <!--logo-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="430dp"
+        android:layout_marginTop="431dp"
+        android:background="@drawable/tologo" />
+    <!--注册和打卡按钮-->
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="600dp"
+        android:layout_marginLeft="700dp"
+        android:layout_marginTop="1700dp"
+        android:text="员工注册"
+        android:textSize="48dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:textColor="@color/white"
+        android:background="@drawable/top_button_shap"
+        style="@style/roundbutton"
+        />
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="462dp"
+        android:layout_marginTop="1700dp"
+        android:textSize="48dp"
+        android:text="打卡"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:textColor="@color/white"
+        android:background="@drawable/top_button_shap"
+        style="@style/roundbutton"
+        />
+
+    <!--重置密码-->
+
+    <TextView
+        android:id="@+id/maintime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="320dp"
+        android:text=""
+        android:textSize="100dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="1000dp"
+        />
+
+</RelativeLayout>

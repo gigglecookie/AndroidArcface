@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1300dp">
+        <TextureView
+            android:id="@+id/single_camera_texture_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.arcsoft.arcfacedemo.widget.FaceRectView
+            android:id="@+id/single_camera_face_rect_view"
+            android:layout_width="match_parent"
+            android:layout_height="1300dp" />
+    </FrameLayout>
+<!--活体检测-->
+    <Switch
+        android:id="@+id/single_camera_switch_liveness_detect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="20dp"
+        android:text="@string/liveness_detect" />
+
+<!--打卡页面信息的显示部分-->
+    <RelativeLayout
+        android:id="@+id/usershow"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_gravity="bottom"
+        android:background="#3366cc"
+        android:layout_marginTop="1300dp">
+        <!--姓名-->
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/username"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_height="700dp"
+            android:layout_width="match_parent"
+            android:text="姓名："
+            android:textSize="50dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="200dp"
+            />
+        <TextView
+            android:id="@+id/editName"
+            android:layout_height="700dp"
+            android:layout_width="match_parent"
+            android:text=""
+            android:textSize="50dp"
+            android:layout_marginTop="110dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="360dp"
+            />
+        <View
+            android:layout_marginTop="180dp"
+            android:layout_height="3dp"
+            android:layout_width="290dp"
+            android:layout_marginLeft="350dp"
+            android:background="#ffffff" />
+        <!--工号-->
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/userid"
+            />
+        <TextView
+            android:id="@+id/id"
+            android:layout_height="700dp"
+            android:layout_width="match_parent"
+            android:text="工号："
+            android:textSize="50dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="200dp"
+            />
+        <TextView
+            android:id="@+id/editId"
+            android:layout_height="700dp"
+            android:layout_width="match_parent"
+            android:text=""
+            android:textSize="50dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="360dp"
+            />
+        <View
+            android:layout_marginTop="290dp"
+            android:layout_height="3dp"
+            android:layout_width="290dp"
+            android:layout_marginLeft="350dp"
+            android:background="#ffffff" />
+        <!--性别-->
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/usersex"
+            />
+        <TextView
+            android:id="@+id/sex"
+            android:layout_height="700dp"
+            android:layout_width="match_parent"
+            android:text="性别："
+            android:textSize="50dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="340dp"
+            android:layout_marginLeft="200dp"
+            />
+        <TextView
+            android:id="@+id/editSex"
+            android:layout_height="700dp"
+            android:layout_width="match_parent"
+            android:text=""
+            android:textSize="50dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="310dp"
+            android:layout_marginLeft="360dp"
+            />
+        <View
+            android:layout_marginTop="390dp"
+            android:layout_height="3dp"
+            android:layout_width="290dp"
+            android:layout_marginLeft="350dp"
+            android:background="#ffffff" />
+
+
+        <!--打卡时间-->
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_marginTop="455dp"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/usertime"
+            />
+        <TextView
+            android:id="@+id/time"
+            android:layout_height="700dp"
+            android:layout_width="match_parent"
+            android:text="打卡时间："
+            android:textSize="50dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="200dp"
+            />
+        <TextView
+            android:id="@+id/editTime"
+            android:layout_height="700dp"
+            android:layout_width="match_parent"
+            android:text=""
+            android:textSize="50dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="440dp"
+            />
+        <View
+            android:layout_marginTop="510dp"
+            android:layout_height="3dp"
+            android:layout_width="290dp"
+            android:layout_marginLeft="440dp"
+            android:background="#ffffff" />
+
+        <!--体温-->
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_marginTop="558dp"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/wendu"
+            />
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_height="700dp"
+            android:layout_width="match_parent"
+            android:text="体温："
+            android:textSize="50dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="550dp"
+            android:layout_marginLeft="200dp"
+            />
+        <TextView
+            android:id="@+id/editTemperature"
+            android:layout_height="700dp"
+            android:layout_width="match_parent"
+            android:text=""
+            android:textSize="50dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="550dp"
+            android:layout_marginLeft="360dp"
+            />
+        <View
+            android:layout_marginTop="620dp"
+            android:layout_height="3dp"
+            android:layout_width="290dp"
+            android:layout_marginLeft="360dp"
+            android:background="#ffffff" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom|end"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--注册按钮-->
+       <!-- <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="register"
+            android:text="@string/register" />
+        &lt;!&ndash;人脸注册&ndash;&gt;
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="switchCamera"
+            android:text="@string/switch_camera" />-->
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/single_camera_recycler_view_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>
